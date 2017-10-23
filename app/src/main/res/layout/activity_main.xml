@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear"
+    android:background="@color/colorBack"
+    tools:context="com.senamoviles.alcayata.alcayatanew.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_fragment_containers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.nightonke.boommenu.BoomMenuButton
+            android:id="@+id/bmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+
+            />
+    </FrameLayout>
+
+    <com.ss.bottomnavigation.BottomNavigation
+        android:id="@+id/botton_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:background="@color/colorPrimary"
+        app:mode="phone">
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:tab_icon="@drawable/ic_import_contacts_white_24dp"
+            app:tab_text="Referecia" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/item_cita"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:tab_icon="@drawable/ic_volume_up_white_24dp"
+            app:tab_text="Audio"/>
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/item_sabias"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:tab_icon="@drawable/ic_info_outline_white_24dp"
+            app:tab_text="Paso" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/item_3d"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:tab_icon="@drawable/ic_3d_rotation_white_24dp"
+            app:tab_text="Modelo"/>
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/item_download"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:tab_icon="@drawable/ic_cloud_download_white_24dp"
+            app:tab_text="PDF" />
+
+    </com.ss.bottomnavigation.BottomNavigation>
+
+
+
+</LinearLayout>
